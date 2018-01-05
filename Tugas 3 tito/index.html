@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TRAVELING JOGJA</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="assets/css/metro.min.css" rel="stylesheet">
+        <link href="assets/css/onepage-scroll.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="app-bar">
+        <a class="app-bar-element" href="...">Traveling Jogja</a>
+        <span class="app-bar-divider"></span>
+        <ul class="app-bar-menu">
+            <li><a href="">Beranda</a></li>
+            <li>
+                <a href="" class="dropdown-toggle">Paket Wisata</a>
+                <ul class="d-menu" data-role="dropdown">
+                    <li><a href="">Paket wisata 1</a></li>
+                    <li><a href="">Paket wisata 2</a></li>
+                    <li><a href="">Paket wisata 3</a></li>
+                    <li><a href="">Paket wisata 4</a></li>
+                </ul>
+            </li>
+            <li><a href="">info</a></li>
+        </ul>
+        </div>
+
+        <div id="main">
+        <section class="page-one">
+            <div class="container">
+            <div class="grid">    
+                <div class="row cells1">
+                    <div class="cell">
+                        <div class="carousel auto stop" id="carousel" data-controls="false" data-markers="false" data-effect="fade" data-height="260">
+                            <div class="slide"><img src="assets/img/1.jpeg" alt=""></div>
+                            <div class="slide"><img src="assets/img/2.jpeg" alt=""></div>
+                            <div class="slide"><img src="assets/img/3.jpeg" alt=""></div>
+                            <div class="slide"><img src="assets/img/4.jpeg" alt=""></div>
+                            <div class="slide"><img src="assets/img/5.jpeg" alt=""></div>
+                         </div><hr>
+
+                        <h4>Traveling Jogja:</h4>
+                        <p class="info">
+                            Traveling Jogja adalah perusahaan yang menyediakan paket wisata dengan tempat wisata di Yogyakarta. Kami menawarkan beberapa paket wisata murah untuk membantu memperlancar liburan anda di Yogyakarta bersama kekasih,rekan dan keluarga. Kami siap menemani perjalanan wisata anda di Yogyakarta dan membantu anda memperoleh berjuta pengalaman dan kenangan indah yang tak terlupakan selama di Yogyakarta.
+                        </p><hr>
+                        <h4>Promo terbatas:</h4>
+                        <h5>Dapatkan potongan <b>20%</b> untuk jenis paket wisata tertentu!</h5>
+                        <div class="countdown" id="countdown" data-days="7"></div>
+                        <button id="bawah" class="button">Dapatkan pengalaman dan kenangan indah yang tak terlupakan di Jogja sekarang</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="page-two">
+            <div class="container">
+            <div class="grid">  
+                <div class="row cells1">
+                    <div class="cell">
+                    <form>
+                        <h3>Silahkan isi form berikut untuk mendapatkan promo dari kami:</h3>
+                        <div class="input-control text">
+                            <input type="text" placeholder="Nama Lengkap" required>
+                        </div><br>
+                        <div class="input-control text">
+                            <input type="text" placeholder="No Identitas" required>
+                        </div><br>
+                        <div class="input-control text">
+                            <input type="text" placeholder="Alamat" required>
+                        </div><br>
+                        <div class="input-control text">
+                            <input type="email" placeholder="Email" required>
+                        </div><br>
+                        <div class="input-control textarea" data-role="input" data-text-auto-resize="true">
+                            <textarea cols="60" placeholder="Komentar anda"></textarea>
+                        </div><br>
+                        <label class="input-control checkbox">
+                            <input type="checkbox" required>
+                            <span class="check"></span>
+                            <span class="caption">Saya menerima syarat & ketentuan yang berlaku</span>
+                        </label><br>
+                        <input type="reset" value="Reset">
+                        <input class="button" type="submit" value="Submit">
+                    </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        </div>
+    
+        <script src="assets/js/jquery-3.2.0.min.js"></script>
+        <script src="assets/js/jquery.onepage-scroll.js"></script>                    
+        <script src="assets/js/metro.min.js"></script>    
+        <script>
+            $(function(){
+                $("#carousel").carousel();
+            });
+
+            $(function(){
+                $("#countdown").countdown();
+            });
+
+            $("#main").onepage_scroll({
+                sectionContainer: "section",
+                easing: "cubic-bezier(0.180, 0.900, 0.410, 1.210)"
+            });
+
+            $("#bawah").click(function() {
+                $("#main").moveDown();
+            });
+        </script>    
+    </body>
+</html>

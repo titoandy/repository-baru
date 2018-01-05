@@ -1,0 +1,34 @@
+body {background-color: #00CED1;}
+
+.cell {
+    padding: 10px;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 5px;
+    background-color: #FFF;
+}
+
+h3 {margin-bottom: 20px;}
+
+h4 {margin-top: 15px;}
+
+h5 {
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+input[type=text], input[type=email], textarea {width: 400px;}
+
+.countdown {
+    margin-top: 10px;
+    margin-left: 28px;
+}
+
+.button {
+    font-size: 18px;
+    margin-left: 150px;
+}
+
+.info {
+    text-align: justify;
+}
+
